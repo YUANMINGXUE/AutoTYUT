@@ -1,0 +1,21 @@
+POST /joinnew/processjq.ashx?shortid=hnLYjda&starttime=2022%2F9%2F14%2019%3A33%3A58&hmt=1&mst=15902&vpsiu=1&submittype=1&ktimes=54&hlv=1&rn=24207111.77943731&relts=1663155235&relusername=2021520672&relsign=be9449ae2367300a0b2a51b5317970a92a994352&relrealname=%E8%96%9B%E5%85%83%E6%98%8E&reldept=005%E4%BF%A1%E6%81%AF%E4%B8%8E%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AD%A6%E9%99%A2&relext=%E5%AD%A6%E9%99%A2&t=1663155302852&jqnonce=95b777c9-ed70-4c89-bacc-55e19f011443&jqsign=%3D1f333g%3D)a%6034)0g%3C%3D)fegg)11a5%3Db455007 HTTP/1.1
+Host: tyutgs.wjx.cn
+Cookie: .ASPXANONYMOUS=4Y2m7-L92AEkAAAAMGQzYTgxYWMtOWJiNS00OWRjLTgyNmMtZDVkNGIxZjdjODI5ofMisVCtFA_wu06fomGixk68M9Q1; acw_tc=76b20fe916631552203858754e43b55ca40735a7c15d45e83fa4de8a4c6d0e; yksuserinfo_e2369e3a6980baa283793081acb7b3ae_1_55677040=3BqzmdV9BvRT5+2iH7VZgJm+oTXI+aD7xTOt7YWu1MVwR+XA0u9eOwpT8teV2glNwlVpPhaNiK8wnPgXHqbT4ABwnrL/WjePBaDecofcNwvn9XpwlG4AGxDQEql8Ub7eYA708RsB4izmCmF2Nhjlvyfr97WxWS/Jjki+ye5xUJfhYN8hXEZyXHJDtsjghOXLaEsSoFFaIejhjuQ7q+bHyr325ArcycypU6b4qZKLepFyEdtpsMgOS1VoIzOaMDYrbz6ZEuw/NC5zZ3wlK4ca6s4g15EQji7bOs8k8G8TUwRFJ9xWJXzj90y77dxRuqI+4gtIExL6hS2XKa3IA9iRRSPSu5IgFq0Vh4JinRntU1+bj0QnqAYCV38bV5gFCax2jszeXpXeU1j+CSExs844XXp649d3aDuosFhgOF2WJv8Z6bkSotSwUV2jweoZVcls; yksuserinfo_e2369e3a6980baa283793081acb7b3ae_1_55677040_ext={"40000":["4"]}; jac180538800=77943731; Hm_lvt_21be24c80829bd7a683b2c536fcf520b=1663155240; Hm_lpvt_21be24c80829bd7a683b2c536fcf520b=1663155240; SERVERID=797658896bbfe7476f5f4103a02a2b4f|1663155259|1663155220
+Content-Length: 632
+Sec-Ch-Ua: "Chromium";v="105", "Not)A;Brand";v="8"
+Accept: text/plain, */*; q=0.01
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+X-Requested-With: XMLHttpRequest
+Sec-Ch-Ua-Mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.5195.102 Safari/537.36
+Sec-Ch-Ua-Platform: "Windows"
+Origin: https://tyutgs.wjx.cn
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://tyutgs.wjx.cn/vm/hnLYjda.aspx?relusername=2021520672&relrealname=8c6fPL8TAG4%3d&relts=1663155235&relsign=be9449ae2367300a0b2a51b5317970a92a994352&appid=&access_token=&user_token=C986fzY4Y8ANeie91V0XkpP4XeBHzWYe%2fA64fzr7fkPiRZf2kIaSoofLYyFRUMEBCGxP3CW6GDLy%2fA3R4%2fHM5lqgV6aXXLFDBvloBYX%2ffRxlBJtMmtTdTA%3d%3d&relDept=005%e4%bf%a1%e6%81%af%e4%b8%8e%e8%ae%a1%e7%ae%97%e6%9c%ba%e5%ad%a6%e9%99%a2&relExt=%e5%ad%a6%e9%99%a2&nbk=1
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Connection: close
+
+submitdata=1%241%7D2%24%7D3%24%7D4%24%E5%B1%B1%E8%A5%BF%E7%9C%81%E5%A4%AA%E5%8E%9F%E5%B8%82%E8%BF%8E%E6%B3%BD%E5%8C%BA%E8%80%81%E5%86%9B%E8%90%A5%E8%A1%97%E9%81%93%E7%9C%81%E5%B9%BF%E6%92%AD%E5%BD%B1%E8%A7%86%E8%89%BA%E6%9C%AF%E5%B9%BC%E5%84%BF%E5%9B%AD%5B112.549248%2C37.857014%5D%7D5%24%7D6%24%7D7%241!%7C%7D8%241%7D9%241%7D10%243%7D11%24(%E8%B7%B3%E8%BF%87)%5E(%E8%B7%B3%E8%BF%87)%5E(%E8%B7%B3%E8%BF%87)%5E(%E8%B7%B3%E8%BF%87)%5E(%E8%B7%B3%E8%BF%87)%7D12%243%7D13%24-3%7D14%242%7D15%24(%E8%B7%B3%E8%BF%87)%5E(%E8%B7%B3%E8%BF%87)%5E(%E8%B7%B3%E8%BF%87)%5E(%E8%B7%B3%E8%BF%87)%5E(%E8%B7%B3%E8%BF%87)%5E(%E8%B7%B3%E8%BF%87)%7D16%241
