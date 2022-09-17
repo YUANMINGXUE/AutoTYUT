@@ -5,12 +5,12 @@ from selenium.webdriver.common.by import By
 import Log
 
 
-def login(username, password):
+def login(username, password, url, headless):
     Log.logLogin(username)
     print("正在为" + username + "打卡")
 
-    # URL偶尔会失效，需要去微信公众号复制
-    url = 'https://tyutgs.wjx.cn/user/loginForm.aspx?user_token=RzCs8KPQb4VEfycFVJ8OM9VfMIonoDn8mvZRKvZASDFp4VcCIv5Gml6SfyIestsKb65WsTOr%2f3MaE1Ok2DHEQFUyW2Ob7XXKOQRU4g7TSxFEpwtYN%2bizadoRdU7%2bJrYW&returnUrl=%2fuser%2fqlist.aspx%3fu%3d%25e6%2589%258b%25e6%259c%25ba%25e7%2594%25a8%25e6%2588%25b7tivliw38j0y8djcff6vstq%26userSystem%3d1%26systemId%3d55677040#1'
+
+    # url = 'https://tyutgs.wjx.cn/user/loginForm.aspx?user_token=RzCs8KPQb4VEfycFVJ8OM9VfMIonoDn8mvZRKvZASDFp4VcCIv5Gml6SfyIestsKb65WsTOr%2f3MaE1Ok2DHEQFUyW2Ob7XXKOQRU4g7TSxFEpwtYN%2bizadoRdU7%2bJrYW&returnUrl=%2fuser%2fqlist.aspx%3fu%3d%25e6%2589%258b%25e6%259c%25ba%25e7%2594%25a8%25e6%2588%25b7tivliw38j0y8djcff6vstq%26userSystem%3d1%26systemId%3d55677040#1'
     # 也可以使用别的WebDriver，例如Chrome,FireFox等
     option = webdriver.EdgeOptions()
     option.add_experimental_option(name='excludeSwitches', value=['enable-automation'])
@@ -18,10 +18,10 @@ def login(username, password):
     # option.add_argument(
     #     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36 Edg/95.0.1020.53')
 
-    # 静默运行，不建议使用
-    option.add_argument('headless')
+    if headless:
+        option.add_argument('headless')
 
-    driver = webdriver.Edge(options=option)
+    driver = webdriver.Edge(options=option, executable_path='msedgedriver.exe')
 
     driver.execute_cdp_cmd('Page.addScriptToEvaluateOnNewDocument',
                            {'source': 'Object.defineProperty(navigator, "webdriver", {get: () => undefined})'})

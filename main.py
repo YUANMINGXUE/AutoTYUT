@@ -1,17 +1,14 @@
-from login import login
+import json
 import Log
 from loginThread import loginThread
 
 if __name__ == '__main__':
     Log.logStart()
-    # 用户列表
-    userlist = [
-        # ('学号', '密码'),
-        # ('学号', '密码'),
-        # ('学号', '密码'),
-    ]
-    for i in userlist:
+    with open('config.json', 'r') as f:
+        config = json.load(f)
+
+    for i in config["users"]:
         # login(i[0], i[1], )
-        loginThread(i[0], i[1]).start()
+        loginThread(i["userid"], i["password"], url=config["URL"], headless=config["headless"]).start()
 
     Log.logFinish()
