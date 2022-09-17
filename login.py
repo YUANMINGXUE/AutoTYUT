@@ -77,6 +77,7 @@ def login(username, password):
         else:
             # 需要验证
             driver.find_element(By.XPATH, "//*[@id='alert_box']/div[2]/div[2]/button").click()
+            sleep(1)
             driver.find_element(By.XPATH, "//*[@id='SM_BTN_1']/div[1]/div[4]").click()
         # print(result)
         time.sleep(3)
