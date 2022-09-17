@@ -12,7 +12,6 @@ def login(username, password):
     # URL偶尔会失效，需要去微信公众号复制
     url = 'https://tyutgs.wjx.cn/user/loginForm.aspx?user_token=RzCs8KPQb4VEfycFVJ8OM9VfMIonoDn8mvZRKvZASDFp4VcCIv5Gml6SfyIestsKb65WsTOr%2f3MaE1Ok2DHEQFUyW2Ob7XXKOQRU4g7TSxFEpwtYN%2bizadoRdU7%2bJrYW&returnUrl=%2fuser%2fqlist.aspx%3fu%3d%25e6%2589%258b%25e6%259c%25ba%25e7%2594%25a8%25e6%2588%25b7tivliw38j0y8djcff6vstq%26userSystem%3d1%26systemId%3d55677040#1'
     # 也可以使用别的WebDriver，例如Chrome,FireFox等
-    driver = webdriver.Edge()
     option = webdriver.EdgeOptions()
     option.add_experimental_option(name='excludeSwitches', value=['enable-automation'])
     option.add_experimental_option('useAutomationExtension', False)
@@ -20,7 +19,7 @@ def login(username, password):
     #     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36 Edg/95.0.1020.53')
 
     # 静默运行，不建议使用
-    # option.add_argument('headless')
+    option.add_argument('headless')
 
     driver = webdriver.Edge(options=option)
 
@@ -58,15 +57,15 @@ def login(username, password):
         # time.sleep(0.75)
         # 勾选承诺真实
         # driver.find_element(By.XPATH, "//*[@id='div16']/div[2]/div/div").click()
-        driver.find_element(By.XPATH, "//*[@id='div16']/div[2]/div").click()
-
+        button = driver.find_element(By.XPATH, "//*[@id='div16']/div[2]/div")
+        driver.execute_script("$(arguments[0]).click()", button)
         time.sleep(1)
         # 玄学，勿删
         driver.execute_script("ktimes=100")
         driver.execute_script("console.log(ktimes)")
         # 提交
-        driver.find_element(By.XPATH, "//*[@id='ctlNext']").click()
-
+        button = driver.find_element(By.XPATH, "//*[@id='ctlNext']")
+        driver.execute_script("$(arguments[0]).click()", button)
         sleep(1)
         # 可能出现需要验证的情况
         try:
