@@ -2,9 +2,11 @@ import time
 from time import sleep
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+import Log
 
 
 def login(username, password):
+    Log.logLogin(username)
     print("正在为" + username + "打卡")
 
     # URL偶尔会失效，需要去微信公众号复制
@@ -84,3 +86,4 @@ def login(username, password):
         driver.refresh()
     driver.close()
     print(username + "打卡成功！！！")
+    Log.logPerFinish(username)
