@@ -12,3 +12,4 @@ if __name__ == '__main__':
         loginThread(i["userid"], i["password"], url=config["URL"], headless=config["headless"]).start()
 
     Log.logFinish()
+

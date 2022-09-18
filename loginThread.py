@@ -1,5 +1,6 @@
 import threading
 from login import login
+import encodings.idna
 
 
 class loginThread(threading.Thread):
