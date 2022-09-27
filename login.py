@@ -50,7 +50,7 @@ def login(username, password, url, headless):
 
         # 点击获取地址
         driver.find_element(By.XPATH, "//*[@id='div4']/div[2]/label").click()
-        time.sleep(6)  # 等待定位，等久一点
+        time.sleep(10)  # 等待定位，等久一点
 
         # 滚动到底部
         # driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
@@ -70,13 +70,13 @@ def login(username, password, url, headless):
         # 可能出现需要验证的情况
         try:
             # 确定验证
-            driver.find_element(By.XPATH, "//*[@id='alert_box']/div[2]/div[2]/button")
+            driver.find_element(By.XPATH, "//*[@id='layui-layer2']/div[2]")
         except:
             # 不需要验证，没事了
             pass
         else:
             # 需要验证
-            driver.find_element(By.XPATH, "//*[@id='alert_box']/div[2]/div[2]/button").click()
+            driver.find_element(By.XPATH, "//*[@id='layui-layer2']/div[3]/a").click()
             sleep(1)
             driver.find_element(By.XPATH, "//*[@id='SM_BTN_1']/div[1]/div[4]").click()
         # print(result)
